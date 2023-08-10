@@ -51,9 +51,9 @@ class ViewController: UIViewController {
             print("App is running on Simulator")
         } else {
             print("App is running on a real device")
-            host = "10.252.196.114"
+//            host = "10.252.196.114"
+            host = "192.168.31.126"
         }
-
         let url = "http://\(host):8080/tangshi"
         makeGetRequest(to: url) { result in
             switch result {
