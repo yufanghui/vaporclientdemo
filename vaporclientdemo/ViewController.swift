@@ -36,13 +36,13 @@ class ViewController: UIViewController {
     }
     
     func isRunningOnSimulator() -> Bool {
-        #if targetEnvironment(simulator)
-            return true
-        #else
-            return false
-        #endif
+#if targetEnvironment(simulator)
+        return true
+#else
+        return false
+#endif
     }
-
+    
     
     @objc func loadData() {
         var host = "127.0.0.1"
@@ -51,8 +51,9 @@ class ViewController: UIViewController {
             print("App is running on Simulator")
         } else {
             print("App is running on a real device")
-//            host = "10.252.196.114"
-            host = "192.168.31.126"
+            //            host = "10.252.196.114"
+            //            host = "192.168.31.126"
+            host = "47.105.217.56"
         }
         let url = "http://\(host):8080/tangshi"
         makeGetRequest(to: url) { result in
@@ -69,6 +70,7 @@ class ViewController: UIViewController {
     
     func updateUI(with poem:Poem)  {
         DispatchQueue.main.async { [self] in
+            self.view.backgroundColor = .randomBgColor
             self.titleLabel.text = poem.title
             self.authorLabel.text = poem.author
             self.paragraphsLabel.text = poem.paragraphs.joined(separator: "\n")
@@ -80,6 +82,7 @@ class ViewController: UIViewController {
         
         view.addSubview(scrollView)
         
+        scrollView.showsVerticalScrollIndicator = false
         scrollView.snp.makeConstraints { make in
             make.edges.equalToSuperview()
         }
@@ -97,6 +100,7 @@ class ViewController: UIViewController {
         contentView.addSubview(paragraphsLabel)
         
         titleLabel.font = UIFont.systemFont(ofSize: 24)
+        titleLabel.numberOfLines = 0
         titleLabel.textAlignment = .center
         titleLabel.snp.makeConstraints { make in
             make.top.equalTo(contentView.safeAreaLayoutGuide.snp.top).offset(20)
@@ -121,7 +125,7 @@ class ViewController: UIViewController {
         
         setupFloatingButton()
     }
-
+    
     
     private func setupFloatingButton() {
         view.addSubview(floatingButton)
