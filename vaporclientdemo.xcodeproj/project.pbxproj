@@ -1,0 +1,443 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3706602D2A84E3ED008F7272 /* Poem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3706602C2A84E3ED008F7272 /* Poem.swift */; };
+		3706602F2A84F7AF008F7272 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3706602E2A84F7AF008F7272 /* Extension.swift */; };
+		37E0E02D2A84D3D000F8B218 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E0E02C2A84D3D000F8B218 /* AppDelegate.swift */; };
+		37E0E02F2A84D3D000F8B218 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E0E02E2A84D3D000F8B218 /* SceneDelegate.swift */; };
+		37E0E0312A84D3D000F8B218 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E0E0302A84D3D000F8B218 /* ViewController.swift */; };
+		37E0E0342A84D3D000F8B218 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37E0E0322A84D3D000F8B218 /* Main.storyboard */; };
+		37E0E0362A84D3D300F8B218 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37E0E0352A84D3D300F8B218 /* Assets.xcassets */; };
+		37E0E0392A84D3D300F8B218 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37E0E0372A84D3D300F8B218 /* LaunchScreen.storyboard */; };
+		AC1D0C01A54C943E8364AEE8 /* Pods_vaporclientdemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D80F5DE23D7D7AB70530C266 /* Pods_vaporclientdemo.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		104FB7FD85FB36588B195BEB /* Pods-vaporclientdemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vaporclientdemo.release.xcconfig"; path = "Target Support Files/Pods-vaporclientdemo/Pods-vaporclientdemo.release.xcconfig"; sourceTree = "<group>"; };
+		3706602C2A84E3ED008F7272 /* Poem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Poem.swift; sourceTree = "<group>"; };
+		3706602E2A84F7AF008F7272 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		37E0E0292A84D3D000F8B218 /* vaporclientdemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = vaporclientdemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		37E0E02C2A84D3D000F8B218 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		37E0E02E2A84D3D000F8B218 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		37E0E0302A84D3D000F8B218 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		37E0E0332A84D3D000F8B218 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		37E0E0352A84D3D300F8B218 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		37E0E0382A84D3D300F8B218 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		37E0E03A2A84D3D300F8B218 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0F974C90B1335672CDF53D9 /* Pods-vaporclientdemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vaporclientdemo.debug.xcconfig"; path = "Target Support Files/Pods-vaporclientdemo/Pods-vaporclientdemo.debug.xcconfig"; sourceTree = "<group>"; };
+		D80F5DE23D7D7AB70530C266 /* Pods_vaporclientdemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_vaporclientdemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		37E0E0262A84D3D000F8B218 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC1D0C01A54C943E8364AEE8 /* Pods_vaporclientdemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		37E0E0202A84D3D000F8B218 = {
+			isa = PBXGroup;
+			children = (
+				37E0E02B2A84D3D000F8B218 /* vaporclientdemo */,
+				37E0E02A2A84D3D000F8B218 /* Products */,
+				B5E05FC8AF267AA303A59578 /* Pods */,
+				EDECA3DA511C968BDBD0E1CE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		37E0E02A2A84D3D000F8B218 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				37E0E0292A84D3D000F8B218 /* vaporclientdemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		37E0E02B2A84D3D000F8B218 /* vaporclientdemo */ = {
+			isa = PBXGroup;
+			children = (
+				37E0E02C2A84D3D000F8B218 /* AppDelegate.swift */,
+				37E0E02E2A84D3D000F8B218 /* SceneDelegate.swift */,
+				37E0E0302A84D3D000F8B218 /* ViewController.swift */,
+				3706602E2A84F7AF008F7272 /* Extension.swift */,
+				3706602C2A84E3ED008F7272 /* Poem.swift */,
+				37E0E0322A84D3D000F8B218 /* Main.storyboard */,
+				37E0E0352A84D3D300F8B218 /* Assets.xcassets */,
+				37E0E0372A84D3D300F8B218 /* LaunchScreen.storyboard */,
+				37E0E03A2A84D3D300F8B218 /* Info.plist */,
+			);
+			path = vaporclientdemo;
+			sourceTree = "<group>";
+		};
+		B5E05FC8AF267AA303A59578 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B0F974C90B1335672CDF53D9 /* Pods-vaporclientdemo.debug.xcconfig */,
+				104FB7FD85FB36588B195BEB /* Pods-vaporclientdemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EDECA3DA511C968BDBD0E1CE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D80F5DE23D7D7AB70530C266 /* Pods_vaporclientdemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		37E0E0282A84D3D000F8B218 /* vaporclientdemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 37E0E03D2A84D3D300F8B218 /* Build configuration list for PBXNativeTarget "vaporclientdemo" */;
+			buildPhases = (
+				58041BAA2BD026CE5D5ACB70 /* [CP] Check Pods Manifest.lock */,
+				37E0E0252A84D3D000F8B218 /* Sources */,
+				37E0E0262A84D3D000F8B218 /* Frameworks */,
+				37E0E0272A84D3D000F8B218 /* Resources */,
+				25D6D80F4E0E3A480B5EBA5E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = vaporclientdemo;
+			productName = vaporclientdemo;
+			productReference = 37E0E0292A84D3D000F8B218 /* vaporclientdemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		37E0E0212A84D3D000F8B218 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					37E0E0282A84D3D000F8B218 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+				};
+			};
+			buildConfigurationList = 37E0E0242A84D3D000F8B218 /* Build configuration list for PBXProject "vaporclientdemo" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 37E0E0202A84D3D000F8B218;
+			productRefGroup = 37E0E02A2A84D3D000F8B218 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				37E0E0282A84D3D000F8B218 /* vaporclientdemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		37E0E0272A84D3D000F8B218 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37E0E0392A84D3D300F8B218 /* LaunchScreen.storyboard in Resources */,
+				37E0E0362A84D3D300F8B218 /* Assets.xcassets in Resources */,
+				37E0E0342A84D3D000F8B218 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		25D6D80F4E0E3A480B5EBA5E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-vaporclientdemo/Pods-vaporclientdemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-vaporclientdemo/Pods-vaporclientdemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-vaporclientdemo/Pods-vaporclientdemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		58041BAA2BD026CE5D5ACB70 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-vaporclientdemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		37E0E0252A84D3D000F8B218 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3706602F2A84F7AF008F7272 /* Extension.swift in Sources */,
+				37E0E0312A84D3D000F8B218 /* ViewController.swift in Sources */,
+				37E0E02D2A84D3D000F8B218 /* AppDelegate.swift in Sources */,
+				3706602D2A84E3ED008F7272 /* Poem.swift in Sources */,
+				37E0E02F2A84D3D000F8B218 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		37E0E0322A84D3D000F8B218 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				37E0E0332A84D3D000F8B218 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		37E0E0372A84D3D300F8B218 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				37E0E0382A84D3D300F8B218 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		37E0E03B2A84D3D300F8B218 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		37E0E03C2A84D3D300F8B218 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		37E0E03E2A84D3D300F8B218 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0F974C90B1335672CDF53D9 /* Pods-vaporclientdemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LD5FM774T7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = vaporclientdemo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yf.vaporclientdemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		37E0E03F2A84D3D300F8B218 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 104FB7FD85FB36588B195BEB /* Pods-vaporclientdemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LD5FM774T7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = vaporclientdemo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yf.vaporclientdemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		37E0E0242A84D3D000F8B218 /* Build configuration list for PBXProject "vaporclientdemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37E0E03B2A84D3D300F8B218 /* Debug */,
+				37E0E03C2A84D3D300F8B218 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		37E0E03D2A84D3D300F8B218 /* Build configuration list for PBXNativeTarget "vaporclientdemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37E0E03E2A84D3D300F8B218 /* Debug */,
+				37E0E03F2A84D3D300F8B218 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 37E0E0212A84D3D000F8B218 /* Project object */;
+}
