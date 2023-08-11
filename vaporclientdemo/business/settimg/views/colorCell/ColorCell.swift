@@ -10,11 +10,11 @@ import UIKit
 class ColorCell: UITableViewCell, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     private var colors: [UIColor] = [
-        UIColor(red: 0.941, green: 0.960, blue: 0.941, alpha: 1.0), // 带有轻微的绿色的白色
-        UIColor(red: 0.961, green: 0.949, blue: 0.925, alpha: 1.0), // 带有轻微的棕色的白色
-        UIColor(red: 0.933, green: 0.941, blue: 0.960, alpha: 1.0), // 带有轻微的蓝色的白色
-        UIColor(red: 0.960, green: 0.949, blue: 0.949, alpha: 1.0), // 带有轻微的红色的白色
-        UIColor(red: 0.949, green: 0.960, blue: 0.941, alpha: 1.0), // 带有轻微的绿色的白色
+//        UIColor(red: 0.941, green: 0.960, blue: 0.941, alpha: 1.0), // 带有轻微的绿色的白色
+//        UIColor(red: 0.961, green: 0.949, blue: 0.925, alpha: 1.0), // 带有轻微的棕色的白色
+//        UIColor(red: 0.933, green: 0.941, blue: 0.960, alpha: 1.0), // 带有轻微的蓝色的白色
+//        UIColor(red: 0.960, green: 0.949, blue: 0.949, alpha: 1.0), // 带有轻微的红色的白色
+//        UIColor(red: 0.949, green: 0.960, blue: 0.941, alpha: 1.0), // 带有轻微的绿色的白色
         UIColor(red: 0.933, green: 0.933, blue: 0.910, alpha: 1.0), // 亚麻色
         UIColor(red: 0.898, green: 0.933, blue: 0.920, alpha: 1.0), // 淡青色
         UIColor(red: 0.961, green: 0.961, blue: 0.933, alpha: 1.0), // 花白色

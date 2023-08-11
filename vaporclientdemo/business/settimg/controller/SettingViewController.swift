@@ -71,6 +71,6 @@ class SettingViewController: UIViewController,UITableViewDelegate, UITableViewDa
        }
        
        func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-           return section == 0 ? "您最喜欢的颜色" : "您最喜欢的字体"
+           return section == 0 ? "背景颜色" : "字体"
        }
 }

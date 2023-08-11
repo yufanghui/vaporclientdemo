@@ -33,9 +33,10 @@ class FontCell: UITableViewCell, UICollectionViewDataSource, UICollectionViewDel
         "FZZJ-GFXLXSJW--GB1-0",
         "FZZJ-HYWKJF--GBK1-0",
         "FZZJ-SYTJW--GB1-0"
-    ]// 示例字体名称，根据需要更改
-    var fontNames:[String] = []
-    var fontInfos:[String:String] = [:]
+    ]
+    var fontInfos:[FontInfo] = [FontInfo]()
+    var lastSelectedInfo:FontInfo?
+    
     
     private lazy var collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
@@ -50,24 +51,31 @@ class FontCell: UITableViewCell, UICollectionViewDataSource, UICollectionViewDel
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
+        
         for name in fonts{
+            let selected = (name == UserConfiguration.shared.favoriteFont)
+            
             if let displayName = displayName(forFont: UIFont(name: name, size: 24) ?? UIFont.systemFont(ofSize: 17)) {
-                print("Display name: \(displayName)")
-                fontNames.append(displayName)
-                fontInfos[displayName] = name
+                let fontInfo = FontInfo(fontName: name, displayName: displayName, selected: selected)
+                fontInfos.append(fontInfo)
+                if selected {
+                    self.lastSelectedInfo = fontInfo
+                }
             }
         }
+        
         contentView.addSubview(collectionView)
         collectionView.snp.makeConstraints { make in
             make.edges.equalTo(contentView)
         }
-          
+        
+       
     }
     
     func scrollToSelectIndex()  {
         let row = fonts.firstIndex(of: UserConfiguration.shared.favoriteFont ?? "") ?? 0
-        let selectIndex = IndexPath(row: row, section: 0)
-        collectionView.scrollToItem(at: selectIndex, at: .left, animated: true)
+        let selectedIndex = IndexPath(row: row, section: 0)
+        collectionView.scrollToItem(at: selectedIndex, at: .left, animated: true)
     }
     
     required init?(coder: NSCoder) {
@@ -76,21 +84,12 @@ class FontCell: UITableViewCell, UICollectionViewDataSource, UICollectionViewDel
     
     // MARK: UICollectionViewDataSource
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return fontNames.count
+        return fontInfos.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FontCollectionViewCell", for: indexPath) as! FontCollectionViewCell
-        let displayName = fontNames[indexPath.item]
-        let name = fontInfos[displayName]
-        cell.label.text = displayName
-        cell.label.font = UIFont.systemFont(ofSize: 16)
-        cell.font = name
-        if name == UserConfiguration.shared.favoriteFont{
-            cell.isSelected = true
-        }else{
-            cell.isSelected = false
-        }
+        cell.fontInfo = fontInfos[indexPath.item]
         return cell
     }
     
@@ -98,16 +97,23 @@ class FontCell: UITableViewCell, UICollectionViewDataSource, UICollectionViewDel
     
     // MARK: UICollectionViewDelegateFlowLayout
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let text = fontNames[indexPath.item] // 获取文本，这里的dataSource是你的数据源数组
+        let fontInfo = fontInfos[indexPath.item] // 获取文本，这里的dataSource是你的数据源数组
         let font = UIFont.systemFont(ofSize: 16.0)
-        let width = widthForText(text, font: font) + 20
+        let width = widthForText(fontInfo.displayName!, font: font) + 20
         return CGSize(width: width, height: 50) // 这里的高度可以根据你的需求来定
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        var info = fontInfos[indexPath.item]
+        if self.lastSelectedInfo?.fontName == info.fontName{
+            return
+        }
+        self.lastSelectedInfo?.selected.toggle()
+        info.selected.toggle()
+        self.lastSelectedInfo = info
+        UserConfiguration.shared.favoriteFont = info.fontName
         collectionView.reloadData()
     }
-    
     
     func widthForText(_ text: String, font: UIFont) -> CGFloat {
         let attributes = [NSAttributedString.Key.font: font]

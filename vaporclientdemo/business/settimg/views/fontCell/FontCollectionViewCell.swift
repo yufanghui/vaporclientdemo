@@ -7,17 +7,16 @@ class FontCollectionViewCell: UICollectionViewCell {
         let lbl = UILabel()
         lbl.textAlignment = .center
         lbl.textColor = .black
+        lbl.font = UIFont.systemFont(ofSize: 16.0)
         return lbl
     }()
     
-    var font:String?
-    
-
-    private let selectedBorderWidth: CGFloat = 3.0
-
-    override var isSelected: Bool {
-        didSet {
-            updateSelectionState()
+    var fontInfo:FontInfo? {
+        didSet{
+            if let info = fontInfo{
+                label.text = info.displayName
+                self.label.backgroundColor = info.selected ? .red:.white
+            }
         }
     }
 
@@ -28,19 +27,10 @@ class FontCollectionViewCell: UICollectionViewCell {
             make.edges.equalTo(contentView)
         }
         self.layer.borderColor = UIColor.gray.cgColor
-        updateSelectionState()
+        self.layer.borderWidth = 1
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
-    }
-
-    private func updateSelectionState() {
-        if isSelected {
-            self.layer.borderWidth = selectedBorderWidth
-            UserConfiguration.shared.favoriteFont = self.font
-        } else {
-            self.layer.borderWidth = 1.0
-        }
     }
 }

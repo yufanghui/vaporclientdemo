@@ -47,6 +47,7 @@
 		B5B836A32A86818900EFC77F /* FZHTFW.TTF in Resources */ = {isa = PBXBuildFile; fileRef = B5B8368C2A86818800EFC77F /* FZHTFW.TTF */; };
 		B5B836A42A86818900EFC77F /* FZJKTB.TTF in Resources */ = {isa = PBXBuildFile; fileRef = B5B8368D2A86818800EFC77F /* FZJKTB.TTF */; };
 		B5B836A52A86818900EFC77F /* FZZhaoMFXSJF.TTF in Resources */ = {isa = PBXBuildFile; fileRef = B5B8368E2A86818900EFC77F /* FZZhaoMFXSJF.TTF */; };
+		B5B836B42A868F5200EFC77F /* FontInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B836B32A868F5200EFC77F /* FontInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -93,6 +94,7 @@
 		B5B8368C2A86818800EFC77F /* FZHTFW.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = FZHTFW.TTF; sourceTree = "<group>"; };
 		B5B8368D2A86818800EFC77F /* FZJKTB.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = FZJKTB.TTF; sourceTree = "<group>"; };
 		B5B8368E2A86818900EFC77F /* FZZhaoMFXSJF.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = FZZhaoMFXSJF.TTF; sourceTree = "<group>"; };
+		B5B836B32A868F5200EFC77F /* FontInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontInfo.swift; sourceTree = "<group>"; };
 		D80F5DE23D7D7AB70530C266 /* Pods_vaporclientdemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_vaporclientdemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -229,10 +231,8 @@
 		B5B836AC2A86846800EFC77F /* views */ = {
 			isa = PBXGroup;
 			children = (
-				37C6F96D2A8645BC00372395 /* ColorCollectionViewCell.swift */,
-				37C6F96F2A8645D600372395 /* ColorCell.swift */,
-				37C6F9712A86464700372395 /* FontCollectionViewCell.swift */,
-				37C6F9732A86465D00372395 /* FontCell.swift */,
+				B5B836B12A86857800EFC77F /* colorCell */,
+				B5B836B22A86858700EFC77F /* fontCell */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -257,6 +257,7 @@
 			isa = PBXGroup;
 			children = (
 				37C6F9752A864ACF00372395 /* UserConfiguration.swift */,
+				B5B836B32A868F5200EFC77F /* FontInfo.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -267,6 +268,24 @@
 				37C6F9632A863BD200372395 /* SlideTransitionAnimator.swift */,
 			);
 			path = helper;
+			sourceTree = "<group>";
+		};
+		B5B836B12A86857800EFC77F /* colorCell */ = {
+			isa = PBXGroup;
+			children = (
+				37C6F96D2A8645BC00372395 /* ColorCollectionViewCell.swift */,
+				37C6F96F2A8645D600372395 /* ColorCell.swift */,
+			);
+			path = colorCell;
+			sourceTree = "<group>";
+		};
+		B5B836B22A86858700EFC77F /* fontCell */ = {
+			isa = PBXGroup;
+			children = (
+				37C6F9712A86464700372395 /* FontCollectionViewCell.swift */,
+				37C6F9732A86465D00372395 /* FontCell.swift */,
+			);
+			path = fontCell;
 			sourceTree = "<group>";
 		};
 		B5E05FC8AF267AA303A59578 /* Pods */ = {
@@ -428,6 +447,7 @@
 				3706602F2A84F7AF008F7272 /* UIColor+Extension.swift in Sources */,
 				37C6F9762A864ACF00372395 /* UserConfiguration.swift in Sources */,
 				37C6F9642A863BD200372395 /* SlideTransitionAnimator.swift in Sources */,
+				B5B836B42A868F5200EFC77F /* FontInfo.swift in Sources */,
 				37C6F9602A861DEF00372395 /* NetTool.swift in Sources */,
 				37C6F9742A86465D00372395 /* FontCell.swift in Sources */,
 				37C6F9722A86464700372395 /* FontCollectionViewCell.swift in Sources */,
