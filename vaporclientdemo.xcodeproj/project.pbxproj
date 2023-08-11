@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3706602D2A84E3ED008F7272 /* Poem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3706602C2A84E3ED008F7272 /* Poem.swift */; };
-		3706602F2A84F7AF008F7272 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3706602E2A84F7AF008F7272 /* Extension.swift */; };
+		3706602F2A84F7AF008F7272 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3706602E2A84F7AF008F7272 /* UIColor+Extension.swift */; };
 		37C6F9602A861DEF00372395 /* NetTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C6F95F2A861DEF00372395 /* NetTool.swift */; };
 		37C6F9622A861E8D00372395 /* ViewController+Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C6F9612A861E8D00372395 /* ViewController+Request.swift */; };
 		37C6F9642A863BD200372395 /* SlideTransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C6F9632A863BD200372395 /* SlideTransitionAnimator.swift */; };
@@ -52,7 +52,7 @@
 /* Begin PBXFileReference section */
 		104FB7FD85FB36588B195BEB /* Pods-vaporclientdemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vaporclientdemo.release.xcconfig"; path = "Target Support Files/Pods-vaporclientdemo/Pods-vaporclientdemo.release.xcconfig"; sourceTree = "<group>"; };
 		3706602C2A84E3ED008F7272 /* Poem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Poem.swift; sourceTree = "<group>"; };
-		3706602E2A84F7AF008F7272 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		3706602E2A84F7AF008F7272 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		37C6F95F2A861DEF00372395 /* NetTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetTool.swift; sourceTree = "<group>"; };
 		37C6F9612A861E8D00372395 /* ViewController+Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Request.swift"; sourceTree = "<group>"; };
 		37C6F9632A863BD200372395 /* SlideTransitionAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideTransitionAnimator.swift; sourceTree = "<group>"; };
@@ -160,25 +160,113 @@
 			isa = PBXGroup;
 			children = (
 				37E0E02C2A84D3D000F8B218 /* AppDelegate.swift */,
-				37E0E0302A84D3D000F8B218 /* ViewController.swift */,
-				37C6F9752A864ACF00372395 /* UserConfiguration.swift */,
-				37C6F9612A861E8D00372395 /* ViewController+Request.swift */,
-				37C6F9652A863C0000372395 /* ViewController+Animation.swift */,
-				37C6F9672A863C5B00372395 /* SettingViewController.swift */,
-				37C6F96D2A8645BC00372395 /* ColorCollectionViewCell.swift */,
-				37C6F96F2A8645D600372395 /* ColorCell.swift */,
-				37C6F9712A86464700372395 /* FontCollectionViewCell.swift */,
-				37C6F9732A86465D00372395 /* FontCell.swift */,
-				3706602E2A84F7AF008F7272 /* Extension.swift */,
-				37C6F9632A863BD200372395 /* SlideTransitionAnimator.swift */,
-				37C6F95F2A861DEF00372395 /* NetTool.swift */,
-				3706602C2A84E3ED008F7272 /* Poem.swift */,
+				B5B836A92A86843200EFC77F /* business */,
+				B5B836AD2A86847500EFC77F /* extension */,
+				B5B836A82A86842A00EFC77F /* net */,
 				37C6F9282A8607A000372395 /* font */,
 				37E0E0352A84D3D300F8B218 /* Assets.xcassets */,
 				37E0E0372A84D3D300F8B218 /* LaunchScreen.storyboard */,
 				37E0E03A2A84D3D300F8B218 /* Info.plist */,
 			);
 			path = vaporclientdemo;
+			sourceTree = "<group>";
+		};
+		B5B836A62A8683ED00EFC77F /* home */ = {
+			isa = PBXGroup;
+			children = (
+				B5B836B02A8684B600EFC77F /* helper */,
+				B5B836AE2A86848600EFC77F /* model */,
+				B5B836AA2A86845100EFC77F /* controller */,
+			);
+			path = home;
+			sourceTree = "<group>";
+		};
+		B5B836A72A8683FD00EFC77F /* settimg */ = {
+			isa = PBXGroup;
+			children = (
+				B5B836AF2A8684A000EFC77F /* model */,
+				B5B836AB2A86845F00EFC77F /* controller */,
+				B5B836AC2A86846800EFC77F /* views */,
+			);
+			path = settimg;
+			sourceTree = "<group>";
+		};
+		B5B836A82A86842A00EFC77F /* net */ = {
+			isa = PBXGroup;
+			children = (
+				37C6F95F2A861DEF00372395 /* NetTool.swift */,
+			);
+			path = net;
+			sourceTree = "<group>";
+		};
+		B5B836A92A86843200EFC77F /* business */ = {
+			isa = PBXGroup;
+			children = (
+				B5B836A62A8683ED00EFC77F /* home */,
+				B5B836A72A8683FD00EFC77F /* settimg */,
+			);
+			path = business;
+			sourceTree = "<group>";
+		};
+		B5B836AA2A86845100EFC77F /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				37E0E0302A84D3D000F8B218 /* ViewController.swift */,
+				37C6F9612A861E8D00372395 /* ViewController+Request.swift */,
+				37C6F9652A863C0000372395 /* ViewController+Animation.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		B5B836AB2A86845F00EFC77F /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				37C6F9672A863C5B00372395 /* SettingViewController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		B5B836AC2A86846800EFC77F /* views */ = {
+			isa = PBXGroup;
+			children = (
+				37C6F96D2A8645BC00372395 /* ColorCollectionViewCell.swift */,
+				37C6F96F2A8645D600372395 /* ColorCell.swift */,
+				37C6F9712A86464700372395 /* FontCollectionViewCell.swift */,
+				37C6F9732A86465D00372395 /* FontCell.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		B5B836AD2A86847500EFC77F /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				3706602E2A84F7AF008F7272 /* UIColor+Extension.swift */,
+			);
+			path = extension;
+			sourceTree = "<group>";
+		};
+		B5B836AE2A86848600EFC77F /* model */ = {
+			isa = PBXGroup;
+			children = (
+				3706602C2A84E3ED008F7272 /* Poem.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		B5B836AF2A8684A000EFC77F /* model */ = {
+			isa = PBXGroup;
+			children = (
+				37C6F9752A864ACF00372395 /* UserConfiguration.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		B5B836B02A8684B600EFC77F /* helper */ = {
+			isa = PBXGroup;
+			children = (
+				37C6F9632A863BD200372395 /* SlideTransitionAnimator.swift */,
+			);
+			path = helper;
 			sourceTree = "<group>";
 		};
 		B5E05FC8AF267AA303A59578 /* Pods */ = {
@@ -337,7 +425,7 @@
 			files = (
 				37C6F9702A8645D600372395 /* ColorCell.swift in Sources */,
 				37C6F96E2A8645BC00372395 /* ColorCollectionViewCell.swift in Sources */,
-				3706602F2A84F7AF008F7272 /* Extension.swift in Sources */,
+				3706602F2A84F7AF008F7272 /* UIColor+Extension.swift in Sources */,
 				37C6F9762A864ACF00372395 /* UserConfiguration.swift in Sources */,
 				37C6F9642A863BD200372395 /* SlideTransitionAnimator.swift in Sources */,
 				37C6F9602A861DEF00372395 /* NetTool.swift in Sources */,
