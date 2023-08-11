@@ -1,0 +1,61 @@
+//
+//  SettingViewController.swift
+//  vaporclientdemo
+//
+//  Created by 58 on 2023/8/11.
+//
+
+import UIKit
+class SettingViewController: UIViewController,UITableViewDelegate, UITableViewDataSource {
+    
+    let tableView = UITableView(frame: .zero, style: .grouped)
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        let swipeRightGesture = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipeRightGesture(_:)))
+        swipeRightGesture.direction = .right
+        view.addGestureRecognizer(swipeRightGesture)
+        view.backgroundColor = .orange
+        
+        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.register(ColorCell.self, forCellReuseIdentifier: "ColorCell")
+        tableView.register(FontCell.self, forCellReuseIdentifier: "FontCell")
+        view.addSubview(tableView)
+        
+        tableView.snp.makeConstraints { make in
+            make.top.equalTo(self.view.safeAreaLayoutGuide.snp.top).offset(20)
+            make.right.left.equalTo(self.view)
+            make.bottom.equalTo(self.view.safeAreaLayoutGuide.snp.bottom).offset(-20)
+        }
+
+    }
+    
+    @objc func handleSwipeRightGesture(_ gesture: UISwipeGestureRecognizer) {
+        if gesture.direction == .right {
+            dismiss(animated: true, completion: nil)
+        }
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+           return 2
+       }
+       
+       func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+           return 1
+       }
+       
+       func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+           if indexPath.section == 0 {
+               let cell = tableView.dequeueReusableCell(withIdentifier: "ColorCell", for: indexPath) as! ColorCell
+               return cell
+           } else {
+               let cell = tableView.dequeueReusableCell(withIdentifier: "FontCell", for: indexPath) as! FontCell
+               return cell
+           }
+       }
+       
+       func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+           return section == 0 ? "您最喜欢的颜色" : "您最喜欢的字体"
+       }
+}
