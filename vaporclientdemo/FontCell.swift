@@ -83,8 +83,8 @@ class FontCell: UITableViewCell, UICollectionViewDataSource, UICollectionViewDel
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FontCollectionViewCell", for: indexPath) as! FontCollectionViewCell
         let displayName = fontNames[indexPath.item]
         let name = fontInfos[displayName]
-        cell.label.text = fontNames[indexPath.item]
-        cell.label.font = UIFont(name: fontNames[indexPath.item], size: 16)
+        cell.label.text = displayName
+        cell.label.font = UIFont.systemFont(ofSize: 16)
         cell.font = name
         if name == UserConfiguration.shared.favoriteFont{
             cell.isSelected = true

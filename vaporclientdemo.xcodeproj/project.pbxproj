@@ -9,27 +9,6 @@
 /* Begin PBXBuildFile section */
 		3706602D2A84E3ED008F7272 /* Poem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3706602C2A84E3ED008F7272 /* Poem.swift */; };
 		3706602F2A84F7AF008F7272 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3706602E2A84F7AF008F7272 /* Extension.swift */; };
-		37C6F9482A86163300372395 /* FZHTFW.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 37C6F9312A86163300372395 /* FZHTFW.TTF */; };
-		37C6F9492A86163300372395 /* FZZJ-SYTJW.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 37C6F9322A86163300372395 /* FZZJ-SYTJW.TTF */; };
-		37C6F94A2A86163300372395 /* FZJFSB.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 37C6F9332A86163300372395 /* FZJFSB.TTF */; };
-		37C6F94B2A86163300372395 /* FZHTB.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 37C6F9342A86163300372395 /* FZHTB.TTF */; };
-		37C6F94C2A86163300372395 /* FZJSSB.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 37C6F9352A86163300372395 /* FZJSSB.TTF */; };
-		37C6F94D2A86163300372395 /* FZFSK.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 37C6F9362A86163300372395 /* FZFSK.TTF */; };
-		37C6F94E2A86163300372395 /* FZKTFW.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 37C6F9372A86163300372395 /* FZKTFW.TTF */; };
-		37C6F94F2A86163300372395 /* FZSSK.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 37C6F9382A86163300372395 /* FZSSK.TTF */; };
-		37C6F9502A86163300372395 /* FZWuYRXSJF.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 37C6F9392A86163300372395 /* FZWuYRXSJF.TTF */; };
-		37C6F9512A86163300372395 /* FZSSJW.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 37C6F93A2A86163300372395 /* FZSSJW.TTF */; };
-		37C6F9522A86163300372395 /* ZKTZhuTKJF.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 37C6F93B2A86163300372395 /* ZKTZhuTKJF.TTF */; };
-		37C6F9532A86163300372395 /* FZKTK.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 37C6F93C2A86163300372395 /* FZKTK.TTF */; };
-		37C6F9542A86163300372395 /* FZZJ-GFXLXSJF.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 37C6F93D2A86163300372395 /* FZZJ-GFXLXSJF.TTF */; };
-		37C6F9552A86163300372395 /* FZKTB.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 37C6F93E2A86163300372395 /* FZKTB.TTF */; };
-		37C6F9562A86163300372395 /* FZSSFW.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 37C6F93F2A86163300372395 /* FZSSFW.TTF */; };
-		37C6F9572A86163300372395 /* FZKTJW.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 37C6F9402A86163300372395 /* FZKTJW.TTF */; };
-		37C6F9582A86163300372395 /* FZZhaoMFXSJF.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 37C6F9412A86163300372395 /* FZZhaoMFXSJF.TTF */; };
-		37C6F95A2A86163300372395 /* FZZJ-GFXLXSJW.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 37C6F9432A86163300372395 /* FZZJ-GFXLXSJW.TTF */; };
-		37C6F95B2A86163300372395 /* FZFSB.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 37C6F9442A86163300372395 /* FZFSB.TTF */; };
-		37C6F95C2A86163300372395 /* FZJKTB.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 37C6F9452A86163300372395 /* FZJKTB.TTF */; };
-		37C6F95E2A86163300372395 /* FZZJ-HYWKJF.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 37C6F9472A86163300372395 /* FZZJ-HYWKJF.TTF */; };
 		37C6F9602A861DEF00372395 /* NetTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C6F95F2A861DEF00372395 /* NetTool.swift */; };
 		37C6F9622A861E8D00372395 /* ViewController+Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C6F9612A861E8D00372395 /* ViewController+Request.swift */; };
 		37C6F9642A863BD200372395 /* SlideTransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C6F9632A863BD200372395 /* SlideTransitionAnimator.swift */; };
@@ -45,33 +24,35 @@
 		37E0E0362A84D3D300F8B218 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37E0E0352A84D3D300F8B218 /* Assets.xcassets */; };
 		37E0E0392A84D3D300F8B218 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37E0E0372A84D3D300F8B218 /* LaunchScreen.storyboard */; };
 		AC1D0C01A54C943E8364AEE8 /* Pods_vaporclientdemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D80F5DE23D7D7AB70530C266 /* Pods_vaporclientdemo.framework */; };
+		B5B8368F2A86818900EFC77F /* FZHTB.TTF in Resources */ = {isa = PBXBuildFile; fileRef = B5B836782A86818600EFC77F /* FZHTB.TTF */; };
+		B5B836902A86818900EFC77F /* FZKTB.TTF in Resources */ = {isa = PBXBuildFile; fileRef = B5B836792A86818600EFC77F /* FZKTB.TTF */; };
+		B5B836912A86818900EFC77F /* FZFSK.TTF in Resources */ = {isa = PBXBuildFile; fileRef = B5B8367A2A86818600EFC77F /* FZFSK.TTF */; };
+		B5B836922A86818900EFC77F /* FZKTJW.TTF in Resources */ = {isa = PBXBuildFile; fileRef = B5B8367B2A86818600EFC77F /* FZKTJW.TTF */; };
+		B5B836932A86818900EFC77F /* FZKTK.TTF in Resources */ = {isa = PBXBuildFile; fileRef = B5B8367C2A86818600EFC77F /* FZKTK.TTF */; };
+		B5B836942A86818900EFC77F /* FZFSFW.TTF in Resources */ = {isa = PBXBuildFile; fileRef = B5B8367D2A86818600EFC77F /* FZFSFW.TTF */; };
+		B5B836952A86818900EFC77F /* FZSSFW.TTF in Resources */ = {isa = PBXBuildFile; fileRef = B5B8367E2A86818600EFC77F /* FZSSFW.TTF */; };
+		B5B836962A86818900EFC77F /* FZKTFW.TTF in Resources */ = {isa = PBXBuildFile; fileRef = B5B8367F2A86818700EFC77F /* FZKTFW.TTF */; };
+		B5B836972A86818900EFC77F /* FZSSK.TTF in Resources */ = {isa = PBXBuildFile; fileRef = B5B836802A86818700EFC77F /* FZSSK.TTF */; };
+		B5B836982A86818900EFC77F /* FZWuYRXSJF.TTF in Resources */ = {isa = PBXBuildFile; fileRef = B5B836812A86818700EFC77F /* FZWuYRXSJF.TTF */; };
+		B5B836992A86818900EFC77F /* FZZJ-GFXLXSJW.TTF in Resources */ = {isa = PBXBuildFile; fileRef = B5B836822A86818700EFC77F /* FZZJ-GFXLXSJW.TTF */; };
+		B5B8369A2A86818900EFC77F /* FZZJ-SYTJW.TTF in Resources */ = {isa = PBXBuildFile; fileRef = B5B836832A86818700EFC77F /* FZZJ-SYTJW.TTF */; };
+		B5B8369B2A86818900EFC77F /* FZZJ-GFXLXSJF.TTF in Resources */ = {isa = PBXBuildFile; fileRef = B5B836842A86818700EFC77F /* FZZJ-GFXLXSJF.TTF */; };
+		B5B8369C2A86818900EFC77F /* ZKTZhuTKJF.TTF in Resources */ = {isa = PBXBuildFile; fileRef = B5B836852A86818700EFC77F /* ZKTZhuTKJF.TTF */; };
+		B5B8369D2A86818900EFC77F /* FZFSJW.TTF in Resources */ = {isa = PBXBuildFile; fileRef = B5B836862A86818700EFC77F /* FZFSJW.TTF */; };
+		B5B8369E2A86818900EFC77F /* FZZJ-HYWKJF.TTF in Resources */ = {isa = PBXBuildFile; fileRef = B5B836872A86818800EFC77F /* FZZJ-HYWKJF.TTF */; };
+		B5B8369F2A86818900EFC77F /* FZFSB.TTF in Resources */ = {isa = PBXBuildFile; fileRef = B5B836882A86818800EFC77F /* FZFSB.TTF */; };
+		B5B836A02A86818900EFC77F /* FZJSSB.TTF in Resources */ = {isa = PBXBuildFile; fileRef = B5B836892A86818800EFC77F /* FZJSSB.TTF */; };
+		B5B836A12A86818900EFC77F /* FZJFSB.TTF in Resources */ = {isa = PBXBuildFile; fileRef = B5B8368A2A86818800EFC77F /* FZJFSB.TTF */; };
+		B5B836A22A86818900EFC77F /* FZSSJW.TTF in Resources */ = {isa = PBXBuildFile; fileRef = B5B8368B2A86818800EFC77F /* FZSSJW.TTF */; };
+		B5B836A32A86818900EFC77F /* FZHTFW.TTF in Resources */ = {isa = PBXBuildFile; fileRef = B5B8368C2A86818800EFC77F /* FZHTFW.TTF */; };
+		B5B836A42A86818900EFC77F /* FZJKTB.TTF in Resources */ = {isa = PBXBuildFile; fileRef = B5B8368D2A86818800EFC77F /* FZJKTB.TTF */; };
+		B5B836A52A86818900EFC77F /* FZZhaoMFXSJF.TTF in Resources */ = {isa = PBXBuildFile; fileRef = B5B8368E2A86818900EFC77F /* FZZhaoMFXSJF.TTF */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		104FB7FD85FB36588B195BEB /* Pods-vaporclientdemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vaporclientdemo.release.xcconfig"; path = "Target Support Files/Pods-vaporclientdemo/Pods-vaporclientdemo.release.xcconfig"; sourceTree = "<group>"; };
 		3706602C2A84E3ED008F7272 /* Poem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Poem.swift; sourceTree = "<group>"; };
 		3706602E2A84F7AF008F7272 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
-		37C6F9312A86163300372395 /* FZHTFW.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; name = FZHTFW.TTF; path = ../../../../Library/Fonts/FZHTFW.TTF; sourceTree = "<group>"; };
-		37C6F9322A86163300372395 /* FZZJ-SYTJW.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; name = "FZZJ-SYTJW.TTF"; path = "../../../../Library/Fonts/FZZJ-SYTJW.TTF"; sourceTree = "<group>"; };
-		37C6F9332A86163300372395 /* FZJFSB.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; name = FZJFSB.TTF; path = ../../../../Library/Fonts/FZJFSB.TTF; sourceTree = "<group>"; };
-		37C6F9342A86163300372395 /* FZHTB.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; name = FZHTB.TTF; path = ../../../../Library/Fonts/FZHTB.TTF; sourceTree = "<group>"; };
-		37C6F9352A86163300372395 /* FZJSSB.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; name = FZJSSB.TTF; path = ../../../../Library/Fonts/FZJSSB.TTF; sourceTree = "<group>"; };
-		37C6F9362A86163300372395 /* FZFSK.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; name = FZFSK.TTF; path = ../../../../Library/Fonts/FZFSK.TTF; sourceTree = "<group>"; };
-		37C6F9372A86163300372395 /* FZKTFW.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; name = FZKTFW.TTF; path = ../../../../Library/Fonts/FZKTFW.TTF; sourceTree = "<group>"; };
-		37C6F9382A86163300372395 /* FZSSK.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; name = FZSSK.TTF; path = ../../../../Library/Fonts/FZSSK.TTF; sourceTree = "<group>"; };
-		37C6F9392A86163300372395 /* FZWuYRXSJF.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; name = FZWuYRXSJF.TTF; path = ../../../../Library/Fonts/FZWuYRXSJF.TTF; sourceTree = "<group>"; };
-		37C6F93A2A86163300372395 /* FZSSJW.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; name = FZSSJW.TTF; path = ../../../../Library/Fonts/FZSSJW.TTF; sourceTree = "<group>"; };
-		37C6F93B2A86163300372395 /* ZKTZhuTKJF.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; name = ZKTZhuTKJF.TTF; path = ../../../../Library/Fonts/ZKTZhuTKJF.TTF; sourceTree = "<group>"; };
-		37C6F93C2A86163300372395 /* FZKTK.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; name = FZKTK.TTF; path = ../../../../Library/Fonts/FZKTK.TTF; sourceTree = "<group>"; };
-		37C6F93D2A86163300372395 /* FZZJ-GFXLXSJF.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; name = "FZZJ-GFXLXSJF.TTF"; path = "../../../../Library/Fonts/FZZJ-GFXLXSJF.TTF"; sourceTree = "<group>"; };
-		37C6F93E2A86163300372395 /* FZKTB.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; name = FZKTB.TTF; path = ../../../../Library/Fonts/FZKTB.TTF; sourceTree = "<group>"; };
-		37C6F93F2A86163300372395 /* FZSSFW.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; name = FZSSFW.TTF; path = ../../../../Library/Fonts/FZSSFW.TTF; sourceTree = "<group>"; };
-		37C6F9402A86163300372395 /* FZKTJW.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; name = FZKTJW.TTF; path = ../../../../Library/Fonts/FZKTJW.TTF; sourceTree = "<group>"; };
-		37C6F9412A86163300372395 /* FZZhaoMFXSJF.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; name = FZZhaoMFXSJF.TTF; path = ../../../../Library/Fonts/FZZhaoMFXSJF.TTF; sourceTree = "<group>"; };
-		37C6F9432A86163300372395 /* FZZJ-GFXLXSJW.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; name = "FZZJ-GFXLXSJW.TTF"; path = "../../../../Library/Fonts/FZZJ-GFXLXSJW.TTF"; sourceTree = "<group>"; };
-		37C6F9442A86163300372395 /* FZFSB.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; name = FZFSB.TTF; path = ../../../../Library/Fonts/FZFSB.TTF; sourceTree = "<group>"; };
-		37C6F9452A86163300372395 /* FZJKTB.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; name = FZJKTB.TTF; path = ../../../../Library/Fonts/FZJKTB.TTF; sourceTree = "<group>"; };
-		37C6F9472A86163300372395 /* FZZJ-HYWKJF.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; name = "FZZJ-HYWKJF.TTF"; path = "../../../../Library/Fonts/FZZJ-HYWKJF.TTF"; sourceTree = "<group>"; };
 		37C6F95F2A861DEF00372395 /* NetTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetTool.swift; sourceTree = "<group>"; };
 		37C6F9612A861E8D00372395 /* ViewController+Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Request.swift"; sourceTree = "<group>"; };
 		37C6F9632A863BD200372395 /* SlideTransitionAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideTransitionAnimator.swift; sourceTree = "<group>"; };
@@ -89,6 +70,29 @@
 		37E0E0382A84D3D300F8B218 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		37E0E03A2A84D3D300F8B218 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B0F974C90B1335672CDF53D9 /* Pods-vaporclientdemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vaporclientdemo.debug.xcconfig"; path = "Target Support Files/Pods-vaporclientdemo/Pods-vaporclientdemo.debug.xcconfig"; sourceTree = "<group>"; };
+		B5B836782A86818600EFC77F /* FZHTB.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = FZHTB.TTF; sourceTree = "<group>"; };
+		B5B836792A86818600EFC77F /* FZKTB.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = FZKTB.TTF; sourceTree = "<group>"; };
+		B5B8367A2A86818600EFC77F /* FZFSK.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = FZFSK.TTF; sourceTree = "<group>"; };
+		B5B8367B2A86818600EFC77F /* FZKTJW.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = FZKTJW.TTF; sourceTree = "<group>"; };
+		B5B8367C2A86818600EFC77F /* FZKTK.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = FZKTK.TTF; sourceTree = "<group>"; };
+		B5B8367D2A86818600EFC77F /* FZFSFW.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = FZFSFW.TTF; sourceTree = "<group>"; };
+		B5B8367E2A86818600EFC77F /* FZSSFW.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = FZSSFW.TTF; sourceTree = "<group>"; };
+		B5B8367F2A86818700EFC77F /* FZKTFW.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = FZKTFW.TTF; sourceTree = "<group>"; };
+		B5B836802A86818700EFC77F /* FZSSK.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = FZSSK.TTF; sourceTree = "<group>"; };
+		B5B836812A86818700EFC77F /* FZWuYRXSJF.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = FZWuYRXSJF.TTF; sourceTree = "<group>"; };
+		B5B836822A86818700EFC77F /* FZZJ-GFXLXSJW.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FZZJ-GFXLXSJW.TTF"; sourceTree = "<group>"; };
+		B5B836832A86818700EFC77F /* FZZJ-SYTJW.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FZZJ-SYTJW.TTF"; sourceTree = "<group>"; };
+		B5B836842A86818700EFC77F /* FZZJ-GFXLXSJF.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FZZJ-GFXLXSJF.TTF"; sourceTree = "<group>"; };
+		B5B836852A86818700EFC77F /* ZKTZhuTKJF.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = ZKTZhuTKJF.TTF; sourceTree = "<group>"; };
+		B5B836862A86818700EFC77F /* FZFSJW.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = FZFSJW.TTF; sourceTree = "<group>"; };
+		B5B836872A86818800EFC77F /* FZZJ-HYWKJF.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FZZJ-HYWKJF.TTF"; sourceTree = "<group>"; };
+		B5B836882A86818800EFC77F /* FZFSB.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = FZFSB.TTF; sourceTree = "<group>"; };
+		B5B836892A86818800EFC77F /* FZJSSB.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = FZJSSB.TTF; sourceTree = "<group>"; };
+		B5B8368A2A86818800EFC77F /* FZJFSB.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = FZJFSB.TTF; sourceTree = "<group>"; };
+		B5B8368B2A86818800EFC77F /* FZSSJW.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = FZSSJW.TTF; sourceTree = "<group>"; };
+		B5B8368C2A86818800EFC77F /* FZHTFW.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = FZHTFW.TTF; sourceTree = "<group>"; };
+		B5B8368D2A86818800EFC77F /* FZJKTB.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = FZJKTB.TTF; sourceTree = "<group>"; };
+		B5B8368E2A86818900EFC77F /* FZZhaoMFXSJF.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = FZZhaoMFXSJF.TTF; sourceTree = "<group>"; };
 		D80F5DE23D7D7AB70530C266 /* Pods_vaporclientdemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_vaporclientdemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -107,27 +111,29 @@
 		37C6F9282A8607A000372395 /* font */ = {
 			isa = PBXGroup;
 			children = (
-				37C6F9442A86163300372395 /* FZFSB.TTF */,
-				37C6F9362A86163300372395 /* FZFSK.TTF */,
-				37C6F9342A86163300372395 /* FZHTB.TTF */,
-				37C6F9312A86163300372395 /* FZHTFW.TTF */,
-				37C6F9332A86163300372395 /* FZJFSB.TTF */,
-				37C6F9452A86163300372395 /* FZJKTB.TTF */,
-				37C6F9352A86163300372395 /* FZJSSB.TTF */,
-				37C6F93E2A86163300372395 /* FZKTB.TTF */,
-				37C6F9372A86163300372395 /* FZKTFW.TTF */,
-				37C6F9402A86163300372395 /* FZKTJW.TTF */,
-				37C6F93C2A86163300372395 /* FZKTK.TTF */,
-				37C6F93F2A86163300372395 /* FZSSFW.TTF */,
-				37C6F93A2A86163300372395 /* FZSSJW.TTF */,
-				37C6F9382A86163300372395 /* FZSSK.TTF */,
-				37C6F9392A86163300372395 /* FZWuYRXSJF.TTF */,
-				37C6F9412A86163300372395 /* FZZhaoMFXSJF.TTF */,
-				37C6F93D2A86163300372395 /* FZZJ-GFXLXSJF.TTF */,
-				37C6F9432A86163300372395 /* FZZJ-GFXLXSJW.TTF */,
-				37C6F9472A86163300372395 /* FZZJ-HYWKJF.TTF */,
-				37C6F9322A86163300372395 /* FZZJ-SYTJW.TTF */,
-				37C6F93B2A86163300372395 /* ZKTZhuTKJF.TTF */,
+				B5B836882A86818800EFC77F /* FZFSB.TTF */,
+				B5B8367D2A86818600EFC77F /* FZFSFW.TTF */,
+				B5B836862A86818700EFC77F /* FZFSJW.TTF */,
+				B5B8367A2A86818600EFC77F /* FZFSK.TTF */,
+				B5B836782A86818600EFC77F /* FZHTB.TTF */,
+				B5B8368C2A86818800EFC77F /* FZHTFW.TTF */,
+				B5B8368A2A86818800EFC77F /* FZJFSB.TTF */,
+				B5B8368D2A86818800EFC77F /* FZJKTB.TTF */,
+				B5B836892A86818800EFC77F /* FZJSSB.TTF */,
+				B5B836792A86818600EFC77F /* FZKTB.TTF */,
+				B5B8367F2A86818700EFC77F /* FZKTFW.TTF */,
+				B5B8367B2A86818600EFC77F /* FZKTJW.TTF */,
+				B5B8367C2A86818600EFC77F /* FZKTK.TTF */,
+				B5B8367E2A86818600EFC77F /* FZSSFW.TTF */,
+				B5B8368B2A86818800EFC77F /* FZSSJW.TTF */,
+				B5B836802A86818700EFC77F /* FZSSK.TTF */,
+				B5B836812A86818700EFC77F /* FZWuYRXSJF.TTF */,
+				B5B8368E2A86818900EFC77F /* FZZhaoMFXSJF.TTF */,
+				B5B836842A86818700EFC77F /* FZZJ-GFXLXSJF.TTF */,
+				B5B836822A86818700EFC77F /* FZZJ-GFXLXSJW.TTF */,
+				B5B836872A86818800EFC77F /* FZZJ-HYWKJF.TTF */,
+				B5B836832A86818700EFC77F /* FZZJ-SYTJW.TTF */,
+				B5B836852A86818700EFC77F /* ZKTZhuTKJF.TTF */,
 			);
 			path = font;
 			sourceTree = "<group>";
@@ -252,29 +258,31 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				37C6F94C2A86163300372395 /* FZJSSB.TTF in Resources */,
-				37C6F9522A86163300372395 /* ZKTZhuTKJF.TTF in Resources */,
-				37C6F9572A86163300372395 /* FZKTJW.TTF in Resources */,
-				37C6F9512A86163300372395 /* FZSSJW.TTF in Resources */,
-				37C6F9542A86163300372395 /* FZZJ-GFXLXSJF.TTF in Resources */,
-				37C6F9582A86163300372395 /* FZZhaoMFXSJF.TTF in Resources */,
-				37C6F94E2A86163300372395 /* FZKTFW.TTF in Resources */,
-				37C6F94F2A86163300372395 /* FZSSK.TTF in Resources */,
-				37C6F9552A86163300372395 /* FZKTB.TTF in Resources */,
-				37C6F95B2A86163300372395 /* FZFSB.TTF in Resources */,
-				37C6F94D2A86163300372395 /* FZFSK.TTF in Resources */,
-				37C6F9502A86163300372395 /* FZWuYRXSJF.TTF in Resources */,
-				37C6F95A2A86163300372395 /* FZZJ-GFXLXSJW.TTF in Resources */,
-				37C6F95C2A86163300372395 /* FZJKTB.TTF in Resources */,
-				37C6F95E2A86163300372395 /* FZZJ-HYWKJF.TTF in Resources */,
-				37C6F9492A86163300372395 /* FZZJ-SYTJW.TTF in Resources */,
-				37C6F94B2A86163300372395 /* FZHTB.TTF in Resources */,
 				37E0E0392A84D3D300F8B218 /* LaunchScreen.storyboard in Resources */,
-				37C6F9482A86163300372395 /* FZHTFW.TTF in Resources */,
-				37C6F94A2A86163300372395 /* FZJFSB.TTF in Resources */,
+				B5B8368F2A86818900EFC77F /* FZHTB.TTF in Resources */,
+				B5B836922A86818900EFC77F /* FZKTJW.TTF in Resources */,
+				B5B8369B2A86818900EFC77F /* FZZJ-GFXLXSJF.TTF in Resources */,
+				B5B836A52A86818900EFC77F /* FZZhaoMFXSJF.TTF in Resources */,
+				B5B836952A86818900EFC77F /* FZSSFW.TTF in Resources */,
+				B5B8369E2A86818900EFC77F /* FZZJ-HYWKJF.TTF in Resources */,
+				B5B836982A86818900EFC77F /* FZWuYRXSJF.TTF in Resources */,
+				B5B836912A86818900EFC77F /* FZFSK.TTF in Resources */,
+				B5B836A02A86818900EFC77F /* FZJSSB.TTF in Resources */,
+				B5B836A42A86818900EFC77F /* FZJKTB.TTF in Resources */,
+				B5B8369A2A86818900EFC77F /* FZZJ-SYTJW.TTF in Resources */,
+				B5B8369F2A86818900EFC77F /* FZFSB.TTF in Resources */,
+				B5B836A12A86818900EFC77F /* FZJFSB.TTF in Resources */,
+				B5B836942A86818900EFC77F /* FZFSFW.TTF in Resources */,
+				B5B8369C2A86818900EFC77F /* ZKTZhuTKJF.TTF in Resources */,
+				B5B836902A86818900EFC77F /* FZKTB.TTF in Resources */,
+				B5B836A22A86818900EFC77F /* FZSSJW.TTF in Resources */,
+				B5B836992A86818900EFC77F /* FZZJ-GFXLXSJW.TTF in Resources */,
 				37E0E0362A84D3D300F8B218 /* Assets.xcassets in Resources */,
-				37C6F9562A86163300372395 /* FZSSFW.TTF in Resources */,
-				37C6F9532A86163300372395 /* FZKTK.TTF in Resources */,
+				B5B8369D2A86818900EFC77F /* FZFSJW.TTF in Resources */,
+				B5B836972A86818900EFC77F /* FZSSK.TTF in Resources */,
+				B5B836A32A86818900EFC77F /* FZHTFW.TTF in Resources */,
+				B5B836962A86818900EFC77F /* FZKTFW.TTF in Resources */,
+				B5B836932A86818900EFC77F /* FZKTK.TTF in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
