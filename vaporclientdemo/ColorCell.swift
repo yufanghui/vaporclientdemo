@@ -45,12 +45,22 @@ class ColorCell: UITableViewCell, UICollectionViewDataSource, UICollectionViewDe
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ColorCollectionViewCell", for: indexPath) as! ColorCollectionViewCell
-        cell.backgroundColor = colors[indexPath.item]
+        let color = colors[indexPath.item]
+        cell.backgroundColor = color
+        if color == UserConfiguration.shared.favoriteColor{
+            cell.isSelected = true
+        }else{
+            cell.isSelected = false
+        }
         return cell
     }
     
     // MARK: UICollectionViewDelegateFlowLayout
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: 50, height: 50)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        collectionView.reloadData()
     }
 }

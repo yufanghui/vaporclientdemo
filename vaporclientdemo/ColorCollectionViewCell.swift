@@ -9,7 +9,7 @@ import UIKit
 
 class ColorCollectionViewCell: UICollectionViewCell {
 
-    private let selectedBorderWidth: CGFloat = 3.0
+    private let selectedBorderWidth: CGFloat = 5.0
     
     override var isSelected: Bool {
         didSet {

@@ -37,7 +37,6 @@ class FontCell: UITableViewCell, UICollectionViewDataSource, UICollectionViewDel
     var fontNames:[String] = []
     var fontInfos:[String:String] = [:]
     
-
     private lazy var collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
@@ -48,7 +47,7 @@ class FontCell: UITableViewCell, UICollectionViewDataSource, UICollectionViewDel
         cv.register(FontCollectionViewCell.self, forCellWithReuseIdentifier: "FontCollectionViewCell")
         return cv
     }()
-
+    
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         for name in fonts{
@@ -77,15 +76,23 @@ class FontCell: UITableViewCell, UICollectionViewDataSource, UICollectionViewDel
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return fontNames.count
     }
-
+    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FontCollectionViewCell", for: indexPath) as! FontCollectionViewCell
         let displayName = fontNames[indexPath.item]
+        let name = fontInfos[displayName]
         cell.label.text = fontNames[indexPath.item]
         cell.label.font = UIFont(name: fontNames[indexPath.item], size: 16)
-        cell.font = fontInfos[displayName]
+        cell.font = name
+        if name == UserConfiguration.shared.favoriteFont{
+            cell.isSelected = true
+        }else{
+            cell.isSelected = false
+        }
         return cell
     }
+    
+    
     
     // MARK: UICollectionViewDelegateFlowLayout
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
@@ -95,13 +102,16 @@ class FontCell: UITableViewCell, UICollectionViewDataSource, UICollectionViewDel
         return CGSize(width: width, height: 50) // 这里的高度可以根据你的需求来定
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        collectionView.reloadData()
+    }
+    
+    
     func widthForText(_ text: String, font: UIFont) -> CGFloat {
         let attributes = [NSAttributedString.Key.font: font]
         let size = (text as NSString).size(withAttributes: attributes)
         return size.width
     }
-
-
     
     func displayName(forFont font: UIFont) -> String? {
         let fontRef = CTFontCreateWithName(font.fontName as CFString, font.pointSize, nil)

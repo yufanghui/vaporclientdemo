@@ -118,7 +118,7 @@ class ViewController: UIViewController {
     
     
     func updateFont() {
-        let fontName = UserConfiguration.shared.favoriteFont!
+        let fontName = UserConfiguration.shared.favoriteFont ?? "FZFSK--GBK1-0"
         
         if let titleFont = UIFont(name: fontName, size: 24) {
             titleLabel.font = titleFont
