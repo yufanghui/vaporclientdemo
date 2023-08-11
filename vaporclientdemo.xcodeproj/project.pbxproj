@@ -26,11 +26,9 @@
 		37C6F9562A86163300372395 /* FZSSFW.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 37C6F93F2A86163300372395 /* FZSSFW.TTF */; };
 		37C6F9572A86163300372395 /* FZKTJW.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 37C6F9402A86163300372395 /* FZKTJW.TTF */; };
 		37C6F9582A86163300372395 /* FZZhaoMFXSJF.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 37C6F9412A86163300372395 /* FZZhaoMFXSJF.TTF */; };
-		37C6F9592A86163300372395 /* FZFSFW.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 37C6F9422A86163300372395 /* FZFSFW.TTF */; };
 		37C6F95A2A86163300372395 /* FZZJ-GFXLXSJW.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 37C6F9432A86163300372395 /* FZZJ-GFXLXSJW.TTF */; };
 		37C6F95B2A86163300372395 /* FZFSB.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 37C6F9442A86163300372395 /* FZFSB.TTF */; };
 		37C6F95C2A86163300372395 /* FZJKTB.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 37C6F9452A86163300372395 /* FZJKTB.TTF */; };
-		37C6F95D2A86163300372395 /* FZFSJW.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 37C6F9462A86163300372395 /* FZFSJW.TTF */; };
 		37C6F95E2A86163300372395 /* FZZJ-HYWKJF.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 37C6F9472A86163300372395 /* FZZJ-HYWKJF.TTF */; };
 		37C6F9602A861DEF00372395 /* NetTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C6F95F2A861DEF00372395 /* NetTool.swift */; };
 		37C6F9622A861E8D00372395 /* ViewController+Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C6F9612A861E8D00372395 /* ViewController+Request.swift */; };
@@ -70,11 +68,9 @@
 		37C6F93F2A86163300372395 /* FZSSFW.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; name = FZSSFW.TTF; path = ../../../../Library/Fonts/FZSSFW.TTF; sourceTree = "<group>"; };
 		37C6F9402A86163300372395 /* FZKTJW.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; name = FZKTJW.TTF; path = ../../../../Library/Fonts/FZKTJW.TTF; sourceTree = "<group>"; };
 		37C6F9412A86163300372395 /* FZZhaoMFXSJF.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; name = FZZhaoMFXSJF.TTF; path = ../../../../Library/Fonts/FZZhaoMFXSJF.TTF; sourceTree = "<group>"; };
-		37C6F9422A86163300372395 /* FZFSFW.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; name = FZFSFW.TTF; path = ../../../../Library/Fonts/FZFSFW.TTF; sourceTree = "<group>"; };
 		37C6F9432A86163300372395 /* FZZJ-GFXLXSJW.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; name = "FZZJ-GFXLXSJW.TTF"; path = "../../../../Library/Fonts/FZZJ-GFXLXSJW.TTF"; sourceTree = "<group>"; };
 		37C6F9442A86163300372395 /* FZFSB.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; name = FZFSB.TTF; path = ../../../../Library/Fonts/FZFSB.TTF; sourceTree = "<group>"; };
 		37C6F9452A86163300372395 /* FZJKTB.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; name = FZJKTB.TTF; path = ../../../../Library/Fonts/FZJKTB.TTF; sourceTree = "<group>"; };
-		37C6F9462A86163300372395 /* FZFSJW.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; name = FZFSJW.TTF; path = ../../../../Library/Fonts/FZFSJW.TTF; sourceTree = "<group>"; };
 		37C6F9472A86163300372395 /* FZZJ-HYWKJF.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; name = "FZZJ-HYWKJF.TTF"; path = "../../../../Library/Fonts/FZZJ-HYWKJF.TTF"; sourceTree = "<group>"; };
 		37C6F95F2A861DEF00372395 /* NetTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetTool.swift; sourceTree = "<group>"; };
 		37C6F9612A861E8D00372395 /* ViewController+Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Request.swift"; sourceTree = "<group>"; };
@@ -112,8 +108,6 @@
 			isa = PBXGroup;
 			children = (
 				37C6F9442A86163300372395 /* FZFSB.TTF */,
-				37C6F9422A86163300372395 /* FZFSFW.TTF */,
-				37C6F9462A86163300372395 /* FZFSJW.TTF */,
 				37C6F9362A86163300372395 /* FZFSK.TTF */,
 				37C6F9342A86163300372395 /* FZHTB.TTF */,
 				37C6F9312A86163300372395 /* FZHTFW.TTF */,
@@ -266,8 +260,6 @@
 				37C6F9582A86163300372395 /* FZZhaoMFXSJF.TTF in Resources */,
 				37C6F94E2A86163300372395 /* FZKTFW.TTF in Resources */,
 				37C6F94F2A86163300372395 /* FZSSK.TTF in Resources */,
-				37C6F95D2A86163300372395 /* FZFSJW.TTF in Resources */,
-				37C6F9592A86163300372395 /* FZFSFW.TTF in Resources */,
 				37C6F9552A86163300372395 /* FZKTB.TTF in Resources */,
 				37C6F95B2A86163300372395 /* FZFSB.TTF in Resources */,
 				37C6F94D2A86163300372395 /* FZFSK.TTF in Resources */,

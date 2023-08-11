@@ -12,8 +12,8 @@ class FontCell: UITableViewCell, UICollectionViewDataSource, UICollectionViewDel
 
     private var fonts: [String] = [
         "FZFSK--GBK1-0",
-        "FZFSJW--GB1-0",
-        "FZFSFW--GB1-0",
+//        "FZFSJW--GB1-0",
+//        "FZFSFW--GB1-0",
         "FZFSB--B51-0",
         "FZHTFW--GB1-0",
         "FZHTB--B51-0",
@@ -21,8 +21,8 @@ class FontCell: UITableViewCell, UICollectionViewDataSource, UICollectionViewDel
         "FZJKTB--B51-0",
         "FZJSSB--B51-0",
         "FZKTK--GBK1-0",
-        "FZKTJW--GB1-0",
-        "FZKTFW--GB1-0",
+//        "FZKTJW--GB1-0",
+//        "FZKTFW--GB1-0",
         "FZKTB--B51-0",
         "FZSSK--GBK1-0",
         "FZSSJW--GB1-0",
@@ -58,14 +58,16 @@ class FontCell: UITableViewCell, UICollectionViewDataSource, UICollectionViewDel
             }
         }
         contentView.addSubview(collectionView)
-        collectionView.translatesAutoresizingMaskIntoConstraints = false
-        NSLayoutConstraint.activate([
-            collectionView.topAnchor.constraint(equalTo: contentView.topAnchor),
-            collectionView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
-            collectionView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
-            collectionView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor),
-            collectionView.heightAnchor.constraint(equalToConstant: 60)
-        ])
+        collectionView.snp.makeConstraints { make in
+            make.edges.equalTo(contentView)
+        }
+          
+    }
+    
+    func scrollToSelectIndex()  {
+        let row = fonts.firstIndex(of: UserConfiguration.shared.favoriteFont ?? "") ?? 0
+        let selectIndex = IndexPath(row: row, section: 0)
+        collectionView.scrollToItem(at: selectIndex, at: .left, animated: true)
     }
     
     required init?(coder: NSCoder) {

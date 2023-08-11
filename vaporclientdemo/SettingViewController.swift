@@ -31,6 +31,21 @@ class SettingViewController: UIViewController,UITableViewDelegate, UITableViewDa
 
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        DispatchQueue.main.asyncAfter(deadline: .now()) {
+            let index = IndexPath(row: 0, section: 1)
+            let cell = self.tableView.cellForRow(at: index) as! FontCell
+            cell.scrollToSelectIndex()
+        }
+        
+        DispatchQueue.main.asyncAfter(deadline: .now()) {
+            let index = IndexPath(row: 0, section: 0)
+            let cell = self.tableView.cellForRow(at: index) as! ColorCell
+            cell.scrollToSelectIndex()
+        }
+    }
+    
     @objc func handleSwipeRightGesture(_ gesture: UISwipeGestureRecognizer) {
         if gesture.direction == .right {
             dismiss(animated: true, completion: nil)

@@ -2,33 +2,32 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-    <key>UIAppFonts</key>
-    <array>
-        <string>FZJFSB.TTF</string>
-        <string>FZFSJW.TTF</string>
-        <string>FZKTK.TTF</string>
-        <string>FZZJ-GFXLXSJF.TTF</string>
-        <string>FZZJ-GFXLXSJW.TTF</string>
-        <string>ZKTZhuTKJF.TTF</string>
-        <string>FZFSK.TTF</string>
-        <string>FZFSB.TTF</string>
-        <string>FZFSFW.TTF</string>
-        <string>FZKTB.TTF</string>
-        <string>FZKTFW.TTF</string>
-        <string>FZJKTB.TTF</string>
-        <string>FZKTJW.TTF</string>
-        <string>FZHTB.TTF</string>
-        <string>FZHTFW.TTF</string>
-        <string>FZSSK.TTF</string>
-        <string>FZSSFW.TTF</string>
-        <string>FZJSSB.TTF</string>
-        <string>FZSSJW.TTF</string>
-        <string>FZZhaoMFXSJF.TTF</string>
-        <string>FZZJ-HYWKJF.TTF</string>
-        <string>FZWuYRXSJF.TTF</string>
-        <string>FZZJ-SYTJW.TTF</string>
-    </array>
-
+	<key>UIAppFonts</key>
+	<array>
+		<string>FZJFSB.TTF</string>
+		<string>FZFSJW.TTF</string>
+		<string>FZKTK.TTF</string>
+		<string>FZZJ-GFXLXSJF.TTF</string>
+		<string>FZZJ-GFXLXSJW.TTF</string>
+		<string>ZKTZhuTKJF.TTF</string>
+		<string>FZFSK.TTF</string>
+		<string>FZFSB.TTF</string>
+		<string>FZFSFW.TTF</string>
+		<string>FZKTB.TTF</string>
+		<string>FZKTFW.TTF</string>
+		<string>FZJKTB.TTF</string>
+		<string>FZKTJW.TTF</string>
+		<string>FZHTB.TTF</string>
+		<string>FZHTFW.TTF</string>
+		<string>FZSSK.TTF</string>
+		<string>FZSSFW.TTF</string>
+		<string>FZJSSB.TTF</string>
+		<string>FZSSJW.TTF</string>
+		<string>FZZhaoMFXSJF.TTF</string>
+		<string>FZZJ-HYWKJF.TTF</string>
+		<string>FZWuYRXSJF.TTF</string>
+		<string>FZZJ-SYTJW.TTF</string>
+	</array>
 	<key>NSAppTransportSecurity</key>
 	<dict>
 		<key>NSAllowsArbitraryLoads</key>
