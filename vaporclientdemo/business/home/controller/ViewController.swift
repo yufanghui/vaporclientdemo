@@ -10,12 +10,15 @@ import SnapKit
 import Toast_Swift
 import CoreText
 
-class ViewController: UIViewController {
+class ViewController: UIViewController ,SettingViewControllerDelegate{
     
     private let titleLabel = UILabel()
     private let authorLabel = UILabel()
     private let paragraphsLabel = UILabel()
     private let scrollView = UIScrollView()
+    
+    var poem:Poem?
+    
     
     private let floatingButton: UIButton = {
         let button = UIButton(type: .system)
@@ -29,7 +32,13 @@ class ViewController: UIViewController {
     }()
     
     let slideTransitionAnimator = SlideTransitionAnimator()
-
+    
+    func didDismissSettingViewController() {
+        // 页面B已经被dismissed，执行所需的操作
+        updateUI(with: self.poem, isFirst: false)
+        
+    }
+    
     
     @objc func nextPoem(){
         loadData(isFirst: false)
@@ -42,31 +51,30 @@ class ViewController: UIViewController {
         loadData(isFirst: true)
         
         let swipeLeftGesture = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipeLeftGesture(_:)))
-               swipeLeftGesture.direction = .left
-               view.addGestureRecognizer(swipeLeftGesture)
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        updateUI(with: nil, isFirst: false)
+        swipeLeftGesture.direction = .left
+        view.addGestureRecognizer(swipeLeftGesture)
     }
     
     public func updateUI(with poem:Poem?,isFirst:Bool)  {
         DispatchQueue.main.async { [self] in
             if isFirst == false{
-                self.view.backgroundColor = UserConfiguration.shared.favoriteColor
+                self.view.backgroundColor = UIColor(hex: UserConfiguration.shared.favoriteColor ?? "#333333")
                 self.updateFont()
             }
             if let po = poem{
+                po.paragraphs.append("") // 这应该会触发didSet
+                po.title.append("")
+                po.author.append("")
                 self.titleLabel.text = po.title
                 self.authorLabel.text = po.author
                 self.paragraphsLabel.text = po.paragraphs.joined(separator: "\n")
+                
             }
         }
     }
     
     func setupUI() {
-        view.backgroundColor =  UserConfiguration.shared.favoriteColor ?? .white
+        view.backgroundColor =  UIColor(hex: UserConfiguration.shared.favoriteColor ?? "#333333")
         
         view.addSubview(scrollView)
         
@@ -132,7 +140,7 @@ class ViewController: UIViewController {
             paragraphsLabel.font = paragraphsFont
         }
     }
-
+    
     
     private func setupFloatingButton() {
         view.addSubview(floatingButton)

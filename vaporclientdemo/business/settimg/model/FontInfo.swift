@@ -17,3 +17,4 @@ class FontInfo {
         self.selected = selected
     }
 }
+

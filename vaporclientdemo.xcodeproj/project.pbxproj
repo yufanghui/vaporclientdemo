@@ -48,6 +48,8 @@
 		B5B836A42A86818900EFC77F /* FZJKTB.TTF in Resources */ = {isa = PBXBuildFile; fileRef = B5B8368D2A86818800EFC77F /* FZJKTB.TTF */; };
 		B5B836A52A86818900EFC77F /* FZZhaoMFXSJF.TTF in Resources */ = {isa = PBXBuildFile; fileRef = B5B8368E2A86818900EFC77F /* FZZhaoMFXSJF.TTF */; };
 		B5B836B42A868F5200EFC77F /* FontInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B836B32A868F5200EFC77F /* FontInfo.swift */; };
+		B5B836B62A8697D200EFC77F /* ColorInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B836B52A8697D200EFC77F /* ColorInfo.swift */; };
+		B5B836BB2A87A28600EFC77F /* LanguageSwitchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B836BA2A87A28600EFC77F /* LanguageSwitchCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -95,6 +97,8 @@
 		B5B8368D2A86818800EFC77F /* FZJKTB.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = FZJKTB.TTF; sourceTree = "<group>"; };
 		B5B8368E2A86818900EFC77F /* FZZhaoMFXSJF.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = FZZhaoMFXSJF.TTF; sourceTree = "<group>"; };
 		B5B836B32A868F5200EFC77F /* FontInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontInfo.swift; sourceTree = "<group>"; };
+		B5B836B52A8697D200EFC77F /* ColorInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorInfo.swift; sourceTree = "<group>"; };
+		B5B836BA2A87A28600EFC77F /* LanguageSwitchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageSwitchCell.swift; sourceTree = "<group>"; };
 		D80F5DE23D7D7AB70530C266 /* Pods_vaporclientdemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_vaporclientdemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -143,6 +147,7 @@
 		37E0E0202A84D3D000F8B218 = {
 			isa = PBXGroup;
 			children = (
+				B5B836B72A87A18A00EFC77F /* Packages */,
 				37E0E02B2A84D3D000F8B218 /* vaporclientdemo */,
 				37E0E02A2A84D3D000F8B218 /* Products */,
 				B5E05FC8AF267AA303A59578 /* Pods */,
@@ -231,6 +236,7 @@
 		B5B836AC2A86846800EFC77F /* views */ = {
 			isa = PBXGroup;
 			children = (
+				B5B836B92A87A22F00EFC77F /* languageCell */,
 				B5B836B12A86857800EFC77F /* colorCell */,
 				B5B836B22A86858700EFC77F /* fontCell */,
 			);
@@ -258,6 +264,7 @@
 			children = (
 				37C6F9752A864ACF00372395 /* UserConfiguration.swift */,
 				B5B836B32A868F5200EFC77F /* FontInfo.swift */,
+				B5B836B52A8697D200EFC77F /* ColorInfo.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -286,6 +293,21 @@
 				37C6F9732A86465D00372395 /* FontCell.swift */,
 			);
 			path = fontCell;
+			sourceTree = "<group>";
+		};
+		B5B836B72A87A18A00EFC77F /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		B5B836B92A87A22F00EFC77F /* languageCell */ = {
+			isa = PBXGroup;
+			children = (
+				B5B836BA2A87A28600EFC77F /* LanguageSwitchCell.swift */,
+			);
+			path = languageCell;
 			sourceTree = "<group>";
 		};
 		B5E05FC8AF267AA303A59578 /* Pods */ = {
@@ -444,9 +466,11 @@
 			files = (
 				37C6F9702A8645D600372395 /* ColorCell.swift in Sources */,
 				37C6F96E2A8645BC00372395 /* ColorCollectionViewCell.swift in Sources */,
+				B5B836BB2A87A28600EFC77F /* LanguageSwitchCell.swift in Sources */,
 				3706602F2A84F7AF008F7272 /* UIColor+Extension.swift in Sources */,
 				37C6F9762A864ACF00372395 /* UserConfiguration.swift in Sources */,
 				37C6F9642A863BD200372395 /* SlideTransitionAnimator.swift in Sources */,
+				B5B836B62A8697D200EFC77F /* ColorInfo.swift in Sources */,
 				B5B836B42A868F5200EFC77F /* FontInfo.swift in Sources */,
 				37C6F9602A861DEF00372395 /* NetTool.swift in Sources */,
 				37C6F9742A86465D00372395 /* FontCell.swift in Sources */,

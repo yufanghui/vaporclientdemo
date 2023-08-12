@@ -7,6 +7,12 @@
 
 import UIKit
 
+enum FontType: String {
+    case simplified = "Simplified"
+    case traditional = "Traditional"
+}
+
+
 class UserConfiguration {
     
     private enum Keys {
@@ -15,19 +21,19 @@ class UserConfiguration {
     }
 
     static let shared = UserConfiguration()
+    
+    var fontChoice: FontType = .simplified
+    
 
     private init() {}
 
-    var favoriteColor: UIColor? {
+    var favoriteColor: String? {
         get {
-            if let components = UserDefaults.standard.array(forKey: Keys.favoriteColor) as? [CGFloat], components.count == 4 {
-                return UIColor(components: (red: components[0], green: components[1], blue: components[2], alpha: components[3]))
-            }
-            return nil
+            UserDefaults.standard.string(forKey: Keys.favoriteColor)
         }
         set {
-            if let components = newValue?.components {
-                UserDefaults.standard.set([components.red, components.green, components.blue, components.alpha], forKey: Keys.favoriteColor)
+            if let colorString = newValue {
+                UserDefaults.standard.set(colorString, forKey: Keys.favoriteColor)
             }
         }
     }

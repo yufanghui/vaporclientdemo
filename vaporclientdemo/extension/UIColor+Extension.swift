@@ -22,16 +22,20 @@ extension UIColor {
         return UIColor(red: red, green: green, blue: blue, alpha: 1.0)
     }
     
-    var components: (red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat)? {
-        var red: CGFloat = 0
-        var green: CGFloat = 0
-        var blue: CGFloat = 0
-        var alpha: CGFloat = 0
+    /// 从十六进制字符串创建UIColor
+    /// - Parameter hex: 十六进制字符串，可以以"#"开头或不带"#"
+    convenience init(hex: String) {
+        let hexSanitized = hex.trimmingCharacters(in: .whitespacesAndNewlines)
+            .replacingOccurrences(of: "#", with: "")
+        var hexNumber: UInt64 = 0
         
-        return getRed(&red, green: &green, blue: &blue, alpha: &alpha) ? (red, green, blue, alpha) : nil
+        Scanner(string: hexSanitized).scanHexInt64(&hexNumber)
+        
+        let red = CGFloat((hexNumber & 0xFF0000) >> 16) / 255.0
+        let green = CGFloat((hexNumber & 0x00FF00) >> 8) / 255.0
+        let blue = CGFloat(hexNumber & 0x0000FF) / 255.0
+        
+        self.init(red: red, green: green, blue: blue, alpha: 1.0)
     }
     
-    convenience init?(components: (red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat)) {
-        self.init(red: components.red, green: components.green, blue: components.blue, alpha: components.alpha)
-    }
 }

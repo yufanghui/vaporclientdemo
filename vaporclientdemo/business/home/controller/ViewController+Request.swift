@@ -27,6 +27,11 @@ extension ViewController{
         let author = data["author"] as! String
         let title = data["title"] as! String
         let paragraphs = data["paragraphs"] as! [String]
-        return Poem(author: author, title: title, paragraphs: paragraphs)
+        let poem = Poem(author: author, title: title, paragraphs: paragraphs)
+        poem.paragraphs.append("") // 这应该会触发didSet
+        poem.title.append("")
+        poem.author.append("")
+        self.poem = poem
+        return poem
     }
 }

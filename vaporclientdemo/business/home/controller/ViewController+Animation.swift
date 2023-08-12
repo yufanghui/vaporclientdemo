@@ -12,6 +12,7 @@ extension ViewController: UIViewControllerTransitioningDelegate {
         if gesture.direction == .left {
             let settingVc = SettingViewController()
             settingVc.transitioningDelegate = self
+            settingVc.delegate = self
             settingVc.modalPresentationStyle = .overCurrentContext // 这样A页面会保持在B页面的下面
             slideTransitionAnimator.isPresenting = true
             present(settingVc, animated: true, completion: nil)

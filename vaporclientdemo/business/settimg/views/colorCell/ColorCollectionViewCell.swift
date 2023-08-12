@@ -9,32 +9,25 @@ import UIKit
 
 class ColorCollectionViewCell: UICollectionViewCell {
 
-    private let selectedBorderWidth: CGFloat = 5.0
     
-    override var isSelected: Bool {
-        didSet {
-            updateSelectionState()
+    var colorInfo:ColorInfo?{
+        didSet{
+            if let info = colorInfo {
+                self.layer.borderWidth = info.selected ? 3 : 1
+                self.backgroundColor = info.color
+            }
         }
     }
     
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
-        self.layer.borderWidth = 1.0
         self.layer.borderColor = UIColor.gray.cgColor
-        updateSelectionState()
+        
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
-    }
-    
-    private func updateSelectionState() {
-        if isSelected {
-            self.layer.borderWidth = selectedBorderWidth
-            UserConfiguration.shared.favoriteColor = self.backgroundColor
-        } else {
-            self.layer.borderWidth = 1.0
-        }
     }
 }
 
